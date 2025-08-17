@@ -208,13 +208,13 @@
 
             try {
                 // Create Razorpay order
-                const orderResponse = await fetch('http://localhost:3000/api/create-order', {
+                const orderResponse = await fetch('https://ompl-backend.onrender.com/api/create-order', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
                     },
                     body: JSON.stringify({
-                        amount: 29900 // ₹299 in paise
+                        amount: 100 // ₹299 in paise
                     })
                 });
 
